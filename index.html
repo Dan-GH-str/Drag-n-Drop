@@ -3,25 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="styles.css" />
     <title>Drag & Drop</title>
   </head>
   <body>
     <div>
       <div class="row">
+        <div class="column">
           <div class="col-header start">Начать</div>
-          <div class="col-header progress">В процессе</div>
-          <div class="col-header done">Готовы</div>
-      </div>
-
-      <div class="row">
-        <div class="placeholder">
-          <div class="item" draggable="true">Перетащи меня</div>
+          <button class="addBtn" type="button">+</button>
+          <div class="placeholder">
+            <div class="item" draggable="true">Перетащи меня</div>
+          </div>
         </div>
-        <div class="placeholder"></div>
-        <div class="placeholder"></div>
+        
+        <div class="column">
+          <div class="col-header progress">В процессе</div>
+          <button class="addBtn" type="button">+</button>
+          <div class="placeholder"></div>
+        </div>
+
+        <div class="column">
+          <div class="col-header done">Готовы</div>
+          <button class="addBtn" type="button">+</button>
+          <div class="placeholder"></div>
+        </div>
       </div>
-      
     </div>
     <script src="app.js"></script>
   </body>

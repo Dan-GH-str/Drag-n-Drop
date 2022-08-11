@@ -77,6 +77,18 @@ body {
   cursor: grabbing;
 }
 
+.item > textarea::-webkit-scrollbar {
+  width: 6px;
+}
+.item > textarea::-webkit-scrollbar-track {
+  background: rgb(238, 238, 238);
+  opacity: 0;
+}
+.item > textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(205, 205, 206);
+  border-radius: 5px;
+}
+
 .row textarea {
   width: 100%;
   height: 100%;
